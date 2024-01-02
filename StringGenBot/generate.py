@@ -37,21 +37,21 @@ import config
 ask_ques = "**» ▷ ᴄʜᴏᴏsᴇ ᴛʜᴇ sᴛʀɪɴɢ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴᴛ ✔️ : :**"
 buttons_ques = [
     [
-        InlineKeyboardButton("⚡𝗣𝗬𝗥𝗢𝗚𝗥𝗔𝗠⚡", callback_data="pyrogram1"),
-        InlineKeyboardButton("🪴𝗣𝗬𝗥𝗢𝗚𝗥𝗔𝗠 𝗩2🪴", callback_data="pyrogram"),
+        InlineKeyboardButton("⚡بايروجرام⚡", callback_data="pyrogram1"),
+        InlineKeyboardButton("🪴بايروجرام 𝗩2🪴", callback_data="pyrogram"),
     ],
     [
-        InlineKeyboardButton("🍷𝗧𝗘𝗟𝗘𝗧𝗛𝗢𝗡🍷", callback_data="telethon"),
+        InlineKeyboardButton("🍷تيرمكس🍷", callback_data="telethon"),
     ],
     [
-        InlineKeyboardButton("✨𝗣𝗬𝗥𝗢𝗚𝗥𝗔𝗠 𝗕𝗢𝗧✨", callback_data="pyrogram_bot"),
-        InlineKeyboardButton("⚡𝗧𝗘𝗟𝗘𝗧𝗛𝗢𝗡 𝗕𝗢𝗧⚡", callback_data="telethon_bot"),
+        InlineKeyboardButton("✨بايروجرام بوت✨", callback_data="pyrogram_bot"),
+        InlineKeyboardButton("⚡تيرمكس بوت⚡", callback_data="telethon_bot"),
     ],
 ]
 
 gen_button = [
     [
-        InlineKeyboardButton(text="⚡ 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗘 𝗦𝗧𝗥𝗜𝗡𝗚 ⚡", callback_data="generate")
+        InlineKeyboardButton(text="⚡ بدء الجلسة ⚡", callback_data="generate")
     ]
 ]
 
@@ -65,13 +65,13 @@ async def main(_, msg):
 
 async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: bool = False, is_bot: bool = False):
     if telethon:
-        ty = "🍷𝗧𝗘𝗟𝗘𝗧𝗛𝗢𝗡🍷"
+        ty = "🍷تيرمكس🍷"
     else:
-        ty = "⚡𝗣𝗬𝗥𝗢𝗚𝗥𝗔𝗠⚡"
+        ty = "⚡بايروجرام"
         if not old_pyro:
             ty += " 𝐕2"
     if is_bot:
-        ty += " 𝗕𝗢𝗧"
+        ty += " بوت"
     await msg.reply(f"» 𝗧𝗥𝗬𝗜𝗡𝗚 𝗧𝗢 𝗦𝗧𝗔𝗥𝗧 **{ty}** 𝗦𝗘𝗦𝗦𝗜𝗢𝗡 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗢𝗥...")
     user_id = msg.chat.id
     api_id_msg = await bot.ask(user_id, "sᴇɴᴅ ʏᴏᴜʀ **𝗔𝗣𝗜_𝗜𝗗** ᴛᴏ ᴘʀᴏᴄᴇᴇᴅ.\n\nᴄʟɪᴄᴋ ᴏɴ /skip ғᴏʀ ᴜsɪɴɢ ʙᴏᴛ ᴀᴘɪ.", filters=filters.text)
@@ -174,7 +174,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = f"**𝐓𝐡𝐢𝐬 𝐈𝐬 𝐘𝐨𝐮𝐫 {ty} 𝐒𝐭𝐫𝐢𝐧𝐠 𝐒𝐞𝐬𝐬𝐢𝐨𝐧** \n\n`{string_session}` \n\n**𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐁𝐲 :** @NEIMAN_STRING_BOT\n⚡ **𝐍𝐎𝐓𝐄 :** 𝐃𝐨𝐧𝐭 𝐒𝐡𝐚𝐫𝐞 𝐖𝐢𝐭𝐡 𝐀𝐧𝐲𝐨𝐧𝐞 𝐁𝐞𝐜𝐚𝐮𝐬𝐞 𝐇𝐞 𝐂𝐚𝐧 𝐇𝐚𝐜𝐤 𝐘𝐨𝐮𝐫 𝐀𝐥𝐥 𝐃𝐚𝐭𝐚. 🙂 𝐀𝐧𝐝 𝐃𝐨𝐧𝐭 𝐅𝐨𝐫𝐠𝐞𝐭 𝐓𝐨 𝐉𝐨𝐢𝐧 @Neiman_X_Support & @DETECTED_09 🥺"
+    text = f"**𝐓𝐡𝐢𝐬 𝐈𝐬 𝐘𝐨𝐮𝐫 {ty} 𝐒𝐭𝐫𝐢𝐧𝐠 𝐒𝐞𝐬𝐬𝐢𝐨𝐧** \n\n`{string_session}` \n\n**انضم الى قناتي :** @o_94_o\n⚡ **تم :** تم استخراج الجلسة. 🙂 𝐀𝐧𝐝 𝐃𝐨𝐧𝐭 𝐅𝐨𝐫𝐠𝐞𝐭 𝐓𝐨 𝐉𝐨𝐢𝐧 @Neiman_X_Support & @DETECTED_09 🥺"
     try:
         if not is_bot:
             await client.send_message("me", text)
@@ -196,7 +196,7 @@ async def cancelled(msg):
     elif "/skip" in msg.text:
         return False
     elif msg.text.startswith("/"):  # Bot Commands
-        await msg.reply("**» 𝐂𝐀𝐍𝐂𝐄𝐋𝐋𝐄𝐃 𝐓𝐇𝐄 𝐎𝐍𝐆𝐎𝐈𝐍𝐆 𝐒𝐓𝐑𝐈𝐍𝐆 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐈𝐍𝐆 𝐏𝐑𝐎𝐂𝐄𝐒𝐒 !**", quote=True)
+        await msg.reply("**» تم انهاء الجلسة !**", quote=True)
         return True
     else:
         return False
