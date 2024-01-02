@@ -21,7 +21,7 @@ app = Client(
 
 
 if __name__ == "__main__":
-    print("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐒𝐭𝐫𝐢𝐧𝐠 𝐁𝐨𝐭...")
+    print("روح للبوت واضغط start...")
     try:
         app.start()
     except (ApiIdInvalid, ApiIdPublishedFlood):
@@ -32,4 +32,4 @@ if __name__ == "__main__":
     print(f"@{uname} 𝐒𝐓𝐀𝐑𝐓𝐄𝐃 𝐒𝐔𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘. 𝐌𝐀𝐃𝐄 𝐁𝐘 @Neiman_X_Support 🤗")
     idle()
     app.stop()
-    print("𝗕𝗢𝗧 𝗦𝗧𝗢𝗣𝗣𝗘𝗗 𝗕𝗬 𝗕𝗬 !")
+    print("حبيبي والله !")
