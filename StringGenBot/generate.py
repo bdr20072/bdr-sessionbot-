@@ -37,11 +37,11 @@ import config
 ask_ques = "**» ▷ ᴄʜᴏᴏsᴇ ᴛʜᴇ sᴛʀɪɴɢ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴᴛ ✔️ : :**"
 buttons_ques = [
     [
-        InlineKeyboardButton("⚡بايروجرام⚡", callback_data="pyrogram1"),
-        InlineKeyboardButton("🪴بايروجرام 𝗩2🪴", callback_data="pyrogram"),
+        InlineKeyboardButton("⚡بايروجرام⚡", callback_data="بايروجرام),
+        InlineKeyboardButton("🪴بايروجرام 𝗩2🪴", callback_data="بايروجرام2"),
     ],
     [
-        InlineKeyboardButton("🍷تيرمكس🍷", callback_data="telethon"),
+        InlineKeyboardButton("🍷تيرمكس🍷", callback_data="تيرمكس"),
     ],
     [
         InlineKeyboardButton("✨بايروجرام بوت✨", callback_data="pyrogram_bot"),
